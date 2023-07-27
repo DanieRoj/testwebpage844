@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        :root {
+            --primary-color: #09af96;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 1rem;
+            max-width: 33rem;
+            padding: 12rem 2rem 2rem;
+            position: relative;
+        }
+
+        .image {
+            position: absolute;
+            filter: drop-shadow(.5rem 1rem 1.5rem rgba(8, 9, 13, .4));
+            width: 350px;
+            top: -10rem;
+            left: 1rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .price {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .data {
+            padding-top: 4.8rem;
+        }
+
+        .description {
+            margin-bottom: 1.25rem;
+        }
+
+        .data h2 {
+            maring-bottom: 2rem;
+        }
+
+        .description li {
+            list-style-type: none;
+        }
+
+        .checked {
+            color: orange;
+            margin-bottom: 1.25rem;
+        }
+
+        .review {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .button {
+            display: block;
+            width: max-content;
+            padding: 1.25rem 2rem;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="card">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dat5fjo-86962510-a227-4bc5-85dc-32455aa2dde6.png/v1/fill/w_900,h_696,strp/burger_on_a_transparent_background__by_prussiaart_dat5fjo-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1ZDQ1MDE0LThjYzMtNGM5OC1iMDJjLTVhMGNmM2E1NWRkZFwvZGF0NWZqby04Njk2MjUxMC1hMjI3LTRiYzUtODVkYy0zMjQ1NWFhMmRkZTYucG5nIiwiaGVpZ2h0IjoiPD02OTYiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzI1ZDQ1MDE0LThjYzMtNGM5OC1iMDJjLTVhMGNmM2E1NWRkZFwvcHJ1c3NpYWFydC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.kXaP9WwDvfavKjpd9pGKAYvGNl4fEYyN06hRmt2y9M0" class="image" alt="">
+    <div class="data">
+        <h1 class="title">The Beef Burger</h1>
+        <span class="price">14.99</span>
+        <p class="description">
+            Tasty, delicious, and will have you craving more on the first bite. Juicy, mouthwatering, tasty, and everything you’d ever want to savor.
+        </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <a href="#" class="review" target="_blank"><small>2,211 Reviews</small></a>
+        <div>
+            <a href="#" class="button" target="_blank"><small>Add to cart</small></a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
