@@ -1475,6 +1475,11 @@ a{color: #fff}
 /* 4.4.media(max-width:800px) *********************/
 /*************************************************/
 @media(max-width: 800px) {
+
+    .header__social-link {
+        font-size: 8px;
+    }
+
     /*** general ***/
     ._padd_top-bott80 {
         padding: 60px 0;
