@@ -1570,6 +1570,11 @@ a{color: #fff}
 /* 4.5.media(max-width:700px) *********************/
 /*************************************************/
 @media(max-width: 700px) {
+
+    .header__social-link {
+        font-size: 8px;
+    }
+
     /*** general ***/
     ._padd_top-bott80{
         padding: 40px 0;
@@ -1675,6 +1680,11 @@ a{color: #fff}
 /* 4.6.media(max-width:600px) *********************/
 /*************************************************/
 @media(max-width: 600px){
+
+    .header__social-link {
+        font-size: 8px;
+    }
+
     /*** general ***/
 
     .up{
@@ -1749,6 +1759,11 @@ a{color: #fff}
 /* 4.7.media(max-width:500px) *********************/
 /*************************************************/
 @media(max-width: 500px) {
+
+    .header__social-link {
+        font-size: 8px;
+    }
+
     /*** general ***/
     .header{
         min-height: 500px;
@@ -1848,6 +1863,11 @@ a{color: #fff}
 /* 4.8.media(max-width:400px) *********************/
 /*************************************************/
 @media(max-width: 400px){
+    .header__social-link {
+        font-size: 8px;
+    }
+
+
     /*** general ***/
     .up{
         right: 2%;
@@ -1912,6 +1932,12 @@ a{color: #fff}
 /* 4.9.media(max-width:350px) *********************/
 /*************************************************/
 @media(max-width: 350px){
+
+    .header__social-link {
+        font-size: 8px;
+    }
+
+
     /*** general ***/
     .content{
         padding-right: 20px;
