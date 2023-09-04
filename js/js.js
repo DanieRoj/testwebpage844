@@ -159,3 +159,87 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("body").classList.add("loaded");
     }, 30)
 });
+
+/*animation*/
+
+
+var svgns = "http://www.w3.org/2000/svg";
+var twoPI = Math.PI * 2;
+
+function ElectricLine(radius = 48, startOffset = 0){
+
+    var path = document.createElementNS(svgns, 'path');
+
+    var coords = [];
+    var centerX = 50;
+    var centerY = 50;
+
+    for (var i = 0; i <= twoPI + 0.1; i += 0.1 ){
+        coords.push(
+            centerX + ( Math.sin( i + startOffset ) * radius ),
+            centerY + ( Math.cos( i + startOffset ) * radius )
+        );
+    }
+
+    // Slightly randomize the points
+    function updateElectricLine(){
+        path.setAttribute(
+            'd',
+            coords.map((point,i)=>{
+                return (
+                        i == 0 ? 'M' :
+                            i % 2 == 0 ? 'L' :
+                                ','
+                    )
+                    + Math.round( ( point + Math.random() * 3 ) * 100 ) / 100
+            }).join(''));
+    }
+
+    path.style.animationDelay = '0s, ' + ( -Math.random() ) + 's';
+    //path.style.animationDuration = (1.5 + Math.random()) + 's, ' + 0.2 + ( Math.random() * 0.4 ) + 's';
+
+    updateElectricLine();
+
+    // Have to get it in the dom for `getTotalLength` to work
+    var tempSVG = document.createElementNS(svgns, 'svg');
+    tempSVG.appendChild(path);
+    document.body.appendChild(tempSVG);
+
+    // Get the line length
+    var length = path.getTotalLength();
+    document.body.removeChild(tempSVG);
+
+    // Set an accurate strokeDasharray & offset for the animation
+    path.style.strokeDasharray = length/2; //( length * 0.48 ) + ' ' + ( length * 0.52 );
+    path.style.strokeDashoffset = -length;
+
+    return {
+        el: path,
+        update: updateElectricLine
+    }
+}
+
+
+var lines = [
+    new ElectricLine( 35 , Math.PI * 0.0 ),
+    new ElectricLine( 34.5 , Math.PI * 1.0 ),
+    new ElectricLine( 34 , Math.PI * 0.25 ),
+    new ElectricLine( 33.5 , Math.PI * 1.25),
+    new ElectricLine( 33 , Math.PI * 0.5 ),
+    new ElectricLine( 32.5 , Math.PI * 1.5 )
+];
+
+var svg = document.querySelector('.electric-loader g');
+lines.forEach( line => { svg.appendChild(line.el); });
+
+var t = 0;
+function update(){
+    requestAnimationFrame(update);
+    if ( t % 7 == 0 ) {
+        lines.forEach( line => { line.update(); })
+    }
+    t++;
+}
+
+update();
+
