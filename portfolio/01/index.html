@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bakery</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" class="header__logo-img"></picture></div>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto=".hero" class="menu__link link">About Us</a></li>
+							<li class="menu__item"><a href="#" data-goto=".offer" class="menu__link link">Offers</a></li>
+							<li class="menu__item"><a href="#" data-goto=".product" class="menu__link link">Products</a></li>
+							<li class="menu__item"><a href="#" data-goto=".footer" class="menu__link link">Contact</a></li>
+							<li><a href="#" data-popup="#popup-signin" class="header__signin-mobile">Sign In</a></li>
+						</ul>
+					</nav> <button type="button" class="menu__icon icon-menu" aria-label="menu"></button>
+				</div>
+				<div class="header__controls">
+					<a href="#" class="_icon-cart" aria-label="Cart">
+					</a>
+					<div class="header__cart cart">
+						<div class="cart__quantity">0</div>
+						<div class="cart-content" tabindex="0">
+							<ul class="cart-content__list" data-simplebar>
+								<!-- <li class="cart-content__item">
+							<article class="cart-content__product cart-product"><img src="img/slider-products/slide-1.jpg"
+									alt="croissants" class="cart-product__img">
+								<div class="cart-product__text">
+									<h4 class="cart-product__title">Croissants</h4>
+									<span class="cart-product__price"></span>
+								</div>
+								<button class="cart-product__delete" aria-label="Delete item">✖</button>
+							</article>
+						</li> -->
+							</ul>
+							<div class="cart-content__bottom">
+								<div class="cart-content__fullprice">
+									<span>Amount:</span>
+									<span class="fullprice">0 USD</span>
+								</div>
+								<button data-popup="#popup-ordering" class="cart-content__btn">To order</button>
+							</div>
+						</div>
+					</div>
+
+					<form action="#" class="header__search" aria-label="search">
+						<input type="search" placeholder="Search" class="header__search-input">
+						<button class="_icon-search"></button>
+					</form>
+					<a href="#" data-popup="#popup-signin" class="header__signin btn" aria-label="signin">Sign In
+					</a>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<h1 class="hero__title _anim-items _anim-show-scale _anim-no-hide">Bakery Goods of a High Quality Product
+					</h1>
+					<div class="hero__top">
+						<div class="hero__main-image"><picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" class="hero__main-img" alt="Working process"></picture>
+						</div>
+						<div class="hero__buttons"><a href="#" data-goto=".product" class="hero__shop-btn btn">Shop Now</a>
+							<button data-popup="#popup-video" class="hero__order-btn btn"><span class="_icon-btn-play"></span>Order Process</button>
+						</div>
+					</div>
+					<div class="hero__bottom">
+						<div class="hero__item">
+							<div class="hero__item-subtitle subtitle">Peace of Mind</div>
+							<div class="text">A person cannot think well, love well, sleep well
+								if he has not dined well before.</div>
+						</div>
+						<div class="hero__item">
+							<div class="hero__item-subtitle subtitle">Work Timings</div>
+							<div class="text">To cook well, it is not enough to love to eat. You
+								have to love the process itself, put love into every minute of it. Love is the basis of all
+								life, including cooking.
+								Elchin Safarli
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="categories">
+				<div class="categories__container">
+					<div class="categories__left-col">
+						<h2 class="title categories__title _anim-items _anim-show-scale  _anim-no-hide">Categories</h2>
+						<div class="categories__hits">
+							<div class="categories__product">
+								<div class="categories__product-item">
+									<div class="categories__subtitle subtitle">Tasty Donuts</div>
+									<p class="text">Those foods where everyone has a favorite style it's one</p>
+								</div>
+								<div class="categories__product-image _anim-items _anim-show-scale"><picture><source srcset="img/categories-2.webp" type="image/webp"><img src="img/categories-2.jpg" alt="Donuts" class="categories__product-img"></picture></div>
+							</div>
+							<div class="categories__product">
+								<div class="categories__product-image _anim-items _anim-show-scale"><picture><source srcset="img/categories-4.webp" type="image/webp"><img src="img/categories-4.jpg" alt="Donuts" class="categories__product-img"></picture></div>
+								<div class="categories__product-item">
+									<div class="categories__subtitle">Breakfast</div>
+									<p class="text">The most delicious and fragrant breakfasts we have</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="categories__right-col">
+						<div class="categories__image _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/categories-1.webp" type="image/webp"><img src="img/categories-1.jpg" alt="baguettes" class="categories__img"></picture></div>
+						<div class="categories__image _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/categories-3.webp" type="image/webp"><img src="img/categories-3.jpg" alt="cupcakes" class="categories__img"></picture></div>
+					</div>
+					<h2 class="title categories__title-mobile _anim-items _anim-show-scale _anim-no-hide">Categories</h2>
+				</div>
+			</section>
+
+			<section class="product">
+				<div class="product__container">
+					<h2 class="title product__title _anim-items _anim-show-scale _anim-no-hide">All Our Product</h2>
+
+					<div class="product__filter">
+						<button type="button" data-category="all" class="product__filter-item">All Products</button>
+						<button type="button" data-category="sweet" class="product__filter-item">Sweet pastries</button>
+						<button type="button" data-category="bread" class="product__filter-item">Bread products</button>
+					</div>
+
+					<div class="product__slider swiper">
+						<div class="product__wrapper swiper-wrapper">
+							<div class="product__slide swiper-slide" data-filter="sweet">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">14.00$/Kg</span><picture><source srcset="img/slider-products/slide-8.webp" type="image/webp"><img src="img/slider-products/slide-8.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Delicate firm cake</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-1.webp" type="image/webp"><img src="img/slider-products/slide-1.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Butter Croissant Lebu</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">3.00$/Pcs</span><picture><source srcset="img/slider-products/slide-7.webp" type="image/webp"><img src="img/slider-products/slide-7.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Special Donut</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">2.00$/Pcs</span><picture><source srcset="img/slider-products/slide-14.webp" type="image/webp"><img src="img/slider-products/slide-14.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Buns With Seams</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">22.00$/Kg</span><picture><source srcset="img/slider-products/slide-18.webp" type="image/webp"><img src="img/slider-products/slide-18.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Cookies With Jam</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-3.webp" type="image/webp"><img src="img/slider-products/slide-3.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Sweet Chocolate Muffins</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">26.00$/Kg</span><picture><source srcset="img/slider-products/slide-24.webp" type="image/webp"><img src="img/slider-products/slide-24.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Tasty Slice Cake</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-2.webp" type="image/webp"><img src="img/slider-products/slide-2.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Сroissant with poppy seed filling</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">6.00$/Pcs</span><picture><source srcset="img/slider-products/slide-4.webp" type="image/webp"><img src="img/slider-products/slide-4.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Сake with raspberry jam</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-17.webp" type="image/webp"><img src="img/slider-products/slide-17.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Buns With Raisins</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">3.00$/Pcs</span><picture><source srcset="img/slider-products/slide-6.webp" type="image/webp"><img src="img/slider-products/slide-6.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Assorted croissants</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">6.00$/Pcs</span><picture><source srcset="img/slider-products/slide-9.webp" type="image/webp"><img src="img/slider-products/slide-9.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Rye bread</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">3.00$/Pcs</span><picture><source srcset="img/slider-products/slide-10.webp" type="image/webp"><img src="img/slider-products/slide-10.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Milk donut</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-11.webp" type="image/webp"><img src="img/slider-products/slide-11.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Bread with seeds</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-12.webp" type="image/webp"><img src="img/slider-products/slide-12.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Bran bread with grains</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">2.00$/Pcs</span><picture><source srcset="img/slider-products/slide-13.webp" type="image/webp"><img src="img/slider-products/slide-13.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Сinnamon buns</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-15.webp" type="image/webp"><img src="img/slider-products/slide-15.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Сupcake with butter cream</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-16.webp" type="image/webp"><img src="img/slider-products/slide-16.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Eclair with custard</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">15.00$/Kg</span><picture><source srcset="img/slider-products/slide-19.webp" type="image/webp"><img src="img/slider-products/slide-19.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Оatmeal peanut cookies</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-20.webp" type="image/webp"><img src="img/slider-products/slide-20.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Cottage cheese casserole</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">11.00$/Pcs</span><picture><source srcset="img/slider-products/slide-21.webp" type="image/webp"><img src="img/slider-products/slide-21.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Layer cake with cream and jam</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">2.00$/Pcs</span><picture><source srcset="img/slider-products/slide-22.webp" type="image/webp"><img src="img/slider-products/slide-22.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Assorted buns with filling</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">6.00$/Pcs</span><picture><source srcset="img/slider-products/slide-23.webp" type="image/webp"><img src="img/slider-products/slide-23.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Synabons with poppy seeds and nuts</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">3.00$/Pcs</span><picture><source srcset="img/slider-products/slide-25.webp" type="image/webp"><img src="img/slider-products/slide-25.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Traditional charlotte with apples</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-28.webp" type="image/webp"><img src="img/slider-products/slide-28.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Honey cake</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-26.webp" type="image/webp"><img src="img/slider-products/slide-26.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Vanilla chocolate cake</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">14.00$/Pcs</span><picture><source srcset="img/slider-products/slide-27.webp" type="image/webp"><img src="img/slider-products/slide-27.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Biscuit with whipped cream and fresh fruit</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="sweet" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-29.webp" type="image/webp"><img src="img/slider-products/slide-29.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Tiramisu</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">3.00$/Pcs</span><picture><source srcset="img/slider-products/slide-30.webp" type="image/webp"><img src="img/slider-products/slide-30.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Baguette French Bread</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-31.webp" type="image/webp"><img src="img/slider-products/slide-31.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											whole wheat bread</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">2.00$/Pcs</span><picture><source srcset="img/slider-products/slide-32.webp" type="image/webp"><img src="img/slider-products/slide-32.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">
+											Simple baguette</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">4.00$/Pcs</span><picture><source srcset="img/slider-products/slide-33.webp" type="image/webp"><img src="img/slider-products/slide-33.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Cheese baguette</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+							<div data-filter="bread" class="product__slide swiper-slide">
+								<article class="product__item">
+									<div class="product__image"><span class="product__price">5.00$/Pcs</span><picture><source srcset="img/slider-products/slide-34.webp" type="image/webp"><img src="img/slider-products/slide-34.jpg" alt="product" class="product__img"></picture></div>
+									<div class="product__body">
+										<h4 class="product__body-title">Sandwich bread</h4>
+										<button class="product__btn">Add to Cart</button>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="product__swiper-controls">
+						<div class="swiper-button-prev product__slider-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next product__slider-button-next"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="offer">
+				<div class="offer__container">
+					<div class="offer__top-row">
+						<article class="offer__product-item product__item _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-12.webp" type="image/webp"><img src="img/slider-products/slide-12.jpg" alt="week offers" class="product__img"></picture>
+							<div class="offer__product-content">
+								<div class="offer__hidden">
+									<h4 class="product__body-title">Bran bread with grains</h4><span class="product__price">5.00$/Pcs</span>
+								</div>
+								<div class="offer__product-special">Special Offer
+									35% Off</div><button class="offer__product-buy product__btn">Buy Now</button>
+							</div>
+						</article>
+						<div class="offer__product-item_little-mobile _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-29.webp" type="image/webp"><img src="img/slider-products/slide-29.jpg" alt="week offers"></picture>
+						</div>
+						<div class="offer__product-item_little _anim-items _anim-show-scale _anim-no-hide">
+							<h2 class="offer__title title">This Weeks Offers</h2>
+							<div class="offer__subtitle">Enjoy Up To 40% this Week
+							</div>
+
+							<div class="text" style="color: white; margin-top: 2rem;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Suscipit amet illum perferendis est odit reiciendis modi excepturi aut, eius, 
+								ullam perspiciatis inventore laboriosam, ipsa dolore beatae obcaecati animi maxime voluptatibus.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Suscipit amet illum perferendis est odit reiciendis modi excepturi aut, eius, 
+								ullam perspiciatis inventore laboriosam, ipsa dolore beatae obcaecati animi maxime voluptatibus.
+							</div>
+
+							<div class="text" style="color: white; margin-top: 2rem;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Suscipit amet illum perferendis est odit reiciendis modi excepturi aut, eius, 
+								ullam perspiciatis inventore laboriosam, ipsa dolore beatae obcaecati animi maxime voluptatibus.
+							</div>
+					     
+						</div>
+					</div>
+					<div class=" offer__bottom-row">
+						<div class="offer__product-item_little _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-29.webp" type="image/webp"><img src="img/slider-products/slide-29.jpg" alt="week offers"></picture>
+						</div>
+						<article class="offer__product-item product__item _anim-items _anim-show-scale _anim-no-hide">
+							<picture><source srcset="img/slider-products/slide-25.webp" type="image/webp"><img src="img/slider-products/slide-25.jpg" alt="week offers" class="product__img"></picture>
+							<div class="offer__product-content">
+								<div class="offer__hidden">
+									<h4 class="product__body-title">Traditional charlotte with apples</h4><span class="product__price">3.00$/Pcs</span>
+								</div>
+								<div class="offer__product-special">Special Offer
+									35% Off</div><button class="offer__product-buy product__btn">Buy Now</button>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="new">
+				<div class="new__container">
+					<div class="new__left-col">
+						<h2 class="title new__title _anim-items _anim-show-scale _anim-no-hide">New Product</h2>
+						<article class="new__item product__item">
+							<div class="new__item-image _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-6.webp" type="image/webp"><img src="img/slider-products/slide-6.jpg" alt="new" class="new__item-img product__img"></picture></div>
+							<div class="new__item-content">
+								<h4 class="new__item-title product__body-title">Baked Croissant</h4>
+								<div class="new__item-descr">Croissant it's a Very Crispy Croissant With a Lot of Puff Passtry
+								</div>
+								<div class="new__item-footer"><button class="product__btn">Add to Cart</button>
+									<span class="new__item-price product__price">4.00$</span>
+								</div>
+							</div>
+						</article>
+						<article class="new__item product__item">
+							<div class="new__item-image _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-30.webp" type="image/webp"><img src="img/slider-products/slide-30.jpg" alt="new" class="product__img"></picture></div>
+							<div class="new__item-content">
+								<h4 class="new__item-title product__body-title">Baguette French Bread</h4>
+								<div class="new__item-descr">Distinguishable by it's length And Crisp Crust. Is Baguette
+								</div>
+								<div class="new__item-footer"><button class="product__btn">Add to Cart</button>
+									<span class="new__item-price product__price">4.00$</span>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="new__right-col">
+						<div class="new__image _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-9.webp" type="image/webp"><img src="img/slider-products/slide-9.jpg" alt="new" class="new__img new__img_top"></picture></div>
+						<div class="new__image _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-products/slide-7.webp" type="image/webp"><img src="img/slider-products/slide-7.jpg" alt="new" class="new__img new__img_bottom"></picture></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="clients">
+				<div class="clients__container">
+					<div class="clients__slider swiper">
+						<div class="clients__wrapper swiper-wrapper">
+							<div class="clients__slide swiper-slide">
+								<div class="clients__slide-wrap">
+									<h2 class="title clients__title-mobile _anim-items _anim-show-scale _anim-no-hide">What Our
+										Happy Clients Says</h2>
+									<div class="clients__text">
+										<h2 class="title clients__title _anim-items _anim-show-scale _anim-no-hide">What Our Happy
+											Clients Says</h2>
+										<blockquote class="clients__response">“Very tasty, high-quality pastries, they bake as for
+											themselves. I work nearby and once a week I
+											regularly go to get something sweet for breakfast. I want to buy and try the whole
+											range!”</blockquote>
+										<div class="clients__client"><cite class="clients__name">Mariam Lea<span class="clients__profession">Entrepreneur</span></cite></div>
+									</div>
+									<div class="clients__photo _anim-items _anim-show-scale _anim-no-hide"><picture><source srcset="img/slider-clients/client-1.webp" type="image/webp"><img src="img/slider-clients/client-1.jpg" alt="Clients photo" class="clients__photo-img"></picture>
+									</div>
+								</div>
+							</div>
+
+							<div class="clients__slide swiper-slide">
+								<div class="clients__slide-wrap">
+									<h2 class="title clients__title-mobile">What Our Happy Clients Says</h2>
+									<div class="clients__text">
+										<h2 class="title clients__title">What Our Happy Clients Says</h2>
+										<blockquote class="clients__response">“There are so many pastries here! She's so
+											delicious!
+											Everything I took was delicious, magnificent,
+											tender, tasty, unforgettable. Divine croissants, pies like at home, sweet cupcakes and
+											fancy
+											festive
+											cakes. I advise everyone.”</blockquote>
+										<div class="clients__client"><cite class="clients__name">Zahara Flores<span class="clients__profession">Student</span></cite>
+										</div>
+									</div>
+									<div class="clients__photo"><picture><source srcset="img/slider-clients/client-3.webp" type="image/webp"><img src="img/slider-clients/client-3.jpg" alt="Clients photo" class="clients__photo-img"></picture></div>
+								</div>
+							</div>
+
+							<div class="clients__slide swiper-slide">
+								<div class="clients__slide-wrap">
+									<h2 class="title clients__title-mobile">What Our Happy Clients Says</h2>
+									<div class="clients__text">
+										<h2 class="title clients__title">What Our Happy Clients Says</h2>
+										<blockquote class="clients__response">“I ordered for the first time. I was worried,
+											because a
+											meal was planned for colleagues. But as it turned
+											out, in vain - the service is at the highest level! The donuts arrived warm. The
+											filling is very tasty.
+											The dough is soft and fluffy. Colleagues were very pleased! Thank you very much for
+											your products and respect for the customer!” </blockquote>
+										<div class="clients__client"><cite class="clients__name">Kathryn Adams<span class="clients__profession">Mаnager</span></cite></div>
+									</div>
+									<div class="clients__photo"><picture><source srcset="img/slider-clients/client-4.webp" type="image/webp"><img src="img/slider-clients/client-4.jpg" alt="Clients photo" class="clients__photo-img"></picture></div>
+								</div>
+							</div>
+
+							<div class="clients__slide swiper-slide">
+								<div class="clients__slide-wrap">
+									<h2 class="title clients__title-mobile">What Our Happy Clients Says</h2>
+									<div class="clients__text">
+										<h2 class="title clients__title">What Our Happy Clients Says</h2>
+										<blockquote class="clients__response">“We appreciate the delicious cupcakes you made and
+											delivered on Sunday! The Cuppcakes we Provided for our daughter's first birthday party
+											were a
+											big hit with all her guests!”</blockquote>
+										<div class="clients__client"><cite class="clients__name">Malachi Parker<span class="clients__profession">Тeacher</span></cite></div>
+									</div>
+									<div class="clients__photo"><picture><source srcset="img/slider-clients/client-2.webp" type="image/webp"><img src="img/slider-clients/client-2.jpg" alt="Clients photo" class="clients__photo-img"></picture></div>
+								</div>
+							</div>
+
+						</div>
+						<!-- навігація -->
+						<button type="button" class="swiper-button-prev clients__swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next clients__swiper-button-next"></button>
+					</div>
+
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+
+				<div class="footer__top">
+					<div class="footer__left-col">
+						<div class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" class="footer__logo-img"></picture></div>
+						<form class="footer__form" method="post" action="#">
+							<label for="email">Subscribe To Our Newsletter<input required type="text" placeholder="Enter your email" id="email"><button type="submit" class="footer__btn"><span class="_icon-vector-arrow"></span></button></label>
+
+						</form>
+					</div>
+
+					<div class="footer__lists-col">
+
+						<div class="footer__list">
+							<h4 class="footer__lists-title">Products</h4>
+							<ul>
+								<li><a class="link footer__link" href="#" data-goto=".new">New Menu</a></li>
+								<li><a class="link footer__link" href="#" data-goto=".product">Featured Menu</a></li>
+								<li><a class="link footer__link" href="#" data-goto=".categories">Favourite</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__list">
+							<h4 class="footer__lists-title">Company</h4>
+							<ul>
+								<li><a class="link footer__link" href="#" data-goto=".hero">About</a></li>
+								<li><a class="link footer__link" href="#">Terms</a></li>
+								<li><a class="link footer__link" href="#">Privacy Policy</a></li>
+								<li><a class="link footer__link" href="#">Careers</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__list">
+							<h4 class="footer__lists-title">Contact</h4>
+							<div class="footer__social-list">
+								<div class="_icon-email"><a href=" mailto:skydigital@gmail.com" class="link footer__social-link">skydigital@gmail.com</a></div>
+								<div class="_icon-tel"><a href="tel:+021876344522" class="link footer__social-link">(021) 876 344
+										522</a>
+								</div>
+								<div class="_icon-location"><a href="#" class="link footer__social-link">3891 skydigital colombo 7</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__copyright">Copyright @skydigital 2018 All Right Reserved</div>
+
+			</div>
+		</footer>
+	</div>
+	<div id="popup-signin" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">✖</button>
+				<div class="popup__title">Sign in</div>
+				<div class="popup__field">
+					<span class="popup__label" for="email">Email address*</span>
+					<div class="popup__control">
+						<input type="email" name="email" class="popup__input" tabindex="1" placeholder="Email address">
+					</div>
+				</div>
+				<div class="popup__field">
+					<span class="popup__label" for="password">Password*</span>
+					<div class="popup__control">
+						<input type="password" name="password" class="popup__input" tabindex="2" placeholder="Password">
+					</div>
+				</div>
+				<div class="popup__bottom"> <a href="#" class="popup__button btn" tabindex="3">Sign in</a>
+					<span class="popup__forgot-psw"><a class="popup__recover-psw" href="#">Forgot your
+							password?</a></span>
+				</div>
+				<p class="popup__register">New Customer? <a href="#" class="btn"> Sign up</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-ordering" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">✖</button>
+				<div class="popup__title">Order</div>
+				<div class="order-modal__info">
+					<div class="order-modal__quantity order-modal__info-item">Items in the order: <span></span></div>
+					<div class="order-modal__summ order-modal__info-item">Total amount of the order: <span></span></div>
+					<div class="order-modal__products order-modal__info-item">
+						<input type="checkbox" id="pseudo-btn">
+						<label for="pseudo-btn" class="order-modal__btn">Order list</label>
+
+						<ul class="order-modal__list" data-simplebar>
+						</ul>
+					</div>
+				</div>
+				<form action="#" class="order-modal__form order">
+					<input type="hidden" name="theme" value="Callback">
+					<input type="hidden" name="admin_email[]" value="login@gmail.com">
+					<input type="hidden" name="form_subject" value="Application from the site">
+					<label class="order__label">
+						<span class="order__text">Name</span>
+						<input type="text" name="Name" class="order__input">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Phone</span>
+						<input type="tel" name="phone" class="order__input" placeholder="+3 (___)___-__-__">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Email</span>
+						<input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+					</label>
+					<button class="order__btn btn">Checkout</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="popup-video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__video">
+					<button data-close type="button" class="popup__close">✖</button>
+					<video poster="img/slider-products/slide-10.jpg" preload="none" id="video">
+						<source src="img/video.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+					</video>
+					<button id="video-btn" class="video-btn">▶</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
