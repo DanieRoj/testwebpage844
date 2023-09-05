@@ -1028,176 +1028,186 @@ a{color: #fff}
 /* 3.5.section-secrvices ****************/
 /***************************************/
 
+.service__text-adjustment
+{
+    font-family: var(--font-druk-wide-medium);
+    color: #5c5c5c;
+    font-size: 1.3vw;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
 .services__item{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    border-bottom: 2px solid #141414;
-    cursor: pointer;
+position: relative;
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: auto;
+padding-top: 35px;
+padding-bottom: 35px;
+border-bottom: 2px solid #141414;
+cursor: pointer;
 }
 .services__price{
-    position: relative;
-    width: 30%;
-    height: auto;
-    align-self: flex-end;
-    z-index: 3;
-    transition: .25s;
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    -o-transition: .25s;
+position: relative;
+width: 30%;
+height: auto;
+align-self: flex-end;
+z-index: 3;
+transition: .25s;
+-webkit-transition: .25s;
+-moz-transition: .25s;
+-ms-transition: .25s;
+-o-transition: .25s;
 }
 .services__price-wrapp{
-    display: inline-block;
+display: inline-block;
 }
 .services__info,
 .services__date,
 .services__name,
 .services__order,
 .services__order:before{
-    transition: .25s;
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    -o-transition: .25s;
+transition: .25s;
+-webkit-transition: .25s;
+-moz-transition: .25s;
+-ms-transition: .25s;
+-o-transition: .25s;
 }
 .services__order{
-    margin-top: 8px;
+margin-top: 8px;
 }
 .services__info{
-    text-align: left;
-    font-size: 12px;
-    text-transform: uppercase;
+text-align: left;
+font-size: 12px;
+text-transform: uppercase;
 }
 .services_another{
-    text-transform: uppercase;
-    font-size: 25px;
+text-transform: uppercase;
+font-size: 25px;
 }
 .services__date{
-    margin: 0 30px;
-    font-size: 25px;
+margin: 0 30px;
+font-size: 25px;
 }
 .services__order{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
-    font-size: 12px;
-    text-align: right;
-    text-transform: uppercase;
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+font-size: 12px;
+text-align: right;
+text-transform: uppercase;
 }
 .services__order:before{
-    position: absolute;
-    content: '';
-    width: 80px;
-    height: 2px;
-    bottom: -3px;
-    right: 0;
-    background: #fff;
+position: absolute;
+content: '';
+width: 80px;
+height: 2px;
+bottom: -3px;
+right: 0;
+background: #fff;
 }
 .services__name{
-    position: relative;
-    width: 55%;
-    height: auto;
-    text-align: right;
-    z-index: 3;
+position: relative;
+width: 55%;
+height: auto;
+text-align: right;
+z-index: 3;
 }
 .services__name:after{
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 2px;
-    top: 10px;
-    right: 0;
-    background: #0a0a0a;
-    transition: .25s;
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    -o-transition: .25s;
+position: absolute;
+content: '';
+width: 0;
+height: 2px;
+top: 10px;
+right: 0;
+background: #0a0a0a;
+transition: .25s;
+-webkit-transition: .25s;
+-moz-transition: .25s;
+-ms-transition: .25s;
+-o-transition: .25s;
 }
 .services__name h3{
-    position: relative;
-    padding-right: 110px;
-    font-size: 35px;
-    color: transparent;
-    text-decoration: none;
-    -webkit-text-stroke: 1px #fff;
-    transition: .25s;
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    -o-transition: .25s;
+position: relative;
+padding-right: 110px;
+font-size: 35px;
+color: transparent;
+text-decoration: none;
+-webkit-text-stroke: 1px #fff;
+transition: .25s;
+-webkit-transition: .25s;
+-moz-transition: .25s;
+-ms-transition: .25s;
+-o-transition: .25s;
 }
 .services__num{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 20px;
-    font-style: italic;
-    color: #141414;
-    -webkit-text-stroke: transparent;
+position: absolute;
+top: 0;
+right: 0;
+font-size: 20px;
+font-style: italic;
+color: #141414;
+-webkit-text-stroke: transparent;
 }
 .services__hover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 2;
 }
 .services__bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    background: #fff;
-    transform: scaleY(0);
-    -webkit-transform: scaleY(0);
-    -moz-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    -o-transform: scaleY(0);
-    transition: .25s;
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    -o-transition: .25s;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+opacity: 0;
+background: #fff;
+transform: scaleY(0);
+-webkit-transform: scaleY(0);
+-moz-transform: scaleY(0);
+-ms-transform: scaleY(0);
+-o-transform: scaleY(0);
+transition: .25s;
+-webkit-transition: .25s;
+-moz-transition: .25s;
+-ms-transition: .25s;
+-o-transition: .25s;
 }
 
 .services__item:hover .services__name h3{
-    color: #0a0a0a;
-    -webkit-text-stroke: 1px transparent;
+color: #0a0a0a;
+-webkit-text-stroke: 1px transparent;
 }
 .services__item:hover .services__name:after{
-    width: 60px;
-    transition-delay: .2s;
+width: 60px;
+transition-delay: .2s;
 }
 .services__item:hover .services__name h3{
-    transform: translateX(-80px);
-    -webkit-transform: translateX(-80px);
-    -moz-transform: translateX(-80px);
-    -ms-transform: translateX(-80px);
-    -o-transform: translateX(-80px);
+transform: translateX(-80px);
+-webkit-transform: translateX(-80px);
+-moz-transform: translateX(-80px);
+-ms-transform: translateX(-80px);
+-o-transform: translateX(-80px);
 }
 .services__item:hover .services__price,
 .services__item:hover .services__info,
 .services__item:hover .services__date,
 .services__item:hover .services__order{
-    color: #0a0a0a;
+color: #0a0a0a;
 }
 .services__item:hover .services__order:before{
-    width: 125px;
-    background: #0a0a0a;
+width: 125px;
+background: #0a0a0a;
 }
 .services__item:hover .services__bg{
-    opacity: 1;
-    transform: scaleY(1);
+opacity: 1;
+transform: scaleY(1);
 }
 
 
