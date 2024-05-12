@@ -1423,7 +1423,7 @@ transform: scaleY(1);
         font-size: 8vw;
     }
     .header__title{
-        line-height: .81;
+        line-height: 1.1;
     }
 
     .header__social-link,
